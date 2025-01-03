@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Table</title>
+<style>
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+
+    td, th {
+      padding: 8px;
+    }
+  }
+</style>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+    }
+
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      background-color: #ffffff;
+      font-size: 18px;
+      color: black;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border: 1px solid #8c52ff;
+      table-layout: fixed; /* Ensures columns don't expand too wide */
+    }
+
+    th, td {
+      padding: 15px 20px;
+      text-align: left;
+      border: 1px solid #8c52ff;
+      white-space: nowrap;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #ececff;
+    }
+
+    th {
+      text-align: center;
+    }
+
+    /* Make the table responsive */
+    @media (max-width: 768px) {
+      table {
+        width: 100%;
+        font-size: 14px;
+      }
+
+      th, td {
+        padding: 10px 12px;
+      }
+
+      th {
+        font-size: 16px;
+      }
+
+      td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: right;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+      }
+
+      /* Hide the th row and make labels appear as block */
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 15px;
+        display: block;
+        border: none;
+      }
+    }
+
+    /* Ensure proper handling on very small screens */
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Registration</th>
+        <th>Early Bird<br>(Feb 25, 2025)</th>
+        <th>Late Registration<br>(Mar 10, 2025)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Registration">Delegates from Abroad</td>
+        <td data-label="Early Bird (Feb 25, 2025)">US $150</td>
+        <td data-label="Late Registration (Mar 10, 2025)">US $200</td>
+      </tr>
+      <tr>
+        <td data-label="Registration">Accompanying Person</td>
+        <td data-label="Early Bird (Feb 25, 2025)">US $100</td>
+        <td data-label="Late Registration (Mar 10, 2025)">US $100</td>
+      </tr>
+      <tr>
+        <td data-label="Registration">Delegates from India</td>
+        <td data-label="Early Bird (Feb 25, 2025)">₹5000</td>
+        <td data-label="Late Registration (Mar 10, 2025)">₹6000</td>
+      </tr>
+      <tr>
+        <td data-label="Registration">Accompanying Person</td>
+        <td data-label="Early Bird (Feb 25, 2025)">₹1500</td>
+        <td data-label="Late Registration (Mar 10, 2025)">₹2000</td>
+      </tr>
+      <tr>
+        <td data-label="Registration">Indian Students</td>
+        <td data-label="Early Bird (Feb 25, 2025)">₹2500</td>
+        <td data-label="Late Registration (Mar 10, 2025)">₹3000</td>
+      </tr>
+      <tr>
+        <td data-label="Registration">Foreign Students</td>
+        <td data-label="Early Bird (Feb 25, 2025)">US $75</td>
+        <td data-label="Late Registration (Mar 10, 2025)">US $80</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
