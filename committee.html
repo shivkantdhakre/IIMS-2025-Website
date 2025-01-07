@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body>
+  <section class="sub-header">
+    <nav>
+      <div class="nav-brand">
+        <a href="index.html"><img src="resources/logo.jpg" alt=""></a>
+        <span class="site-title">IIMS-2025</span>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="committee"><strong>Conference Committee</strong></a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="date.html">Important Dates</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="menu-icon">
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </div>
+    </nav>
+    <h1>Organising Committee</h1>
+  </section>
+
+  <section class="committee">
+    <h2 class="sub-title">Patron</h2>
+    <div class="parent-card">
+
+      <div class="card">
+        <div class="card-border-top"></div>
+        <div class="img">
+          <img src="https://www.mmmut.ac.in/images/VC2.png" alt="Profile">
+        </div>
+        <span>Prof. J. P. Saini</span>
+        <p class="job">Hon'ble Vice Chancellor</p>
+        <p class="job job-small">Madan Mohan Malaviya University of Technology, Gorakhpur</p>
+      </div>
+    </div>
+    <h2 class="sub-title">Patron</h2>
+    <div class="parent-card">
+      <div class="card">
+        <div class="card-border-top"></div>
+        <div class="img">
+          <img src="https://www.mmmut.ac.in/News_content/IMGFaculty29.jpg?637507973256744939" alt="Profile">
+        </div>
+        <span>Prof. A.K. Mishra</span>
+        <p class="job">Head</p>
+        <p class="job" style="font-size: 10px">Civil Engineering Department</p>
+        <p class="job" style="font-size: 10px">Madan Mohan Malaviya University of Technology, Gorakhpur</p>
+      </div>
+    </div>
+    <h2 class="sub-title">Coordinators</h2>
+    <!-- Card 1: Dr. Vinay Kumar Singh -->
+    <div class="committee-row">
+      <div class="parent-card">
+        <div class="card">
+          <div class="card-border-top"></div>
+          <div class="img">
+            <img src="https://www.mmmut.ac.in/News_content/IMGFaculty153.jpg?63750505620939957" alt="Profile">
+          </div>
+          <span>Dr. Vinay Kumar Singh</span>
+          <p class="job">Assistant Professor</p>
+          <p class="job" style="font-size: 10px">Department of Civil Engineering</p>
+          <p class="job" style="font-size: 10px">Madan Mohan Malaviya University of Technology, Gorakhpur</p>
+          <p class="job" style="font-size: 12px">vksce@mmmut.ac.in</p>
+          <p class="job" style="font-size: 12px">+91 9235552358</p>
+        </div>
+      </div>
+
+      <!-- Card 2: Dr. Sneha Gupta -->
+      <div class="parent-card">
+        <div class="card">
+          <div class="card-border-top"></div>
+          <div class="img">
+            <img src="https://www.mmmut.ac.in/News_content/IMGFaculty246.jpg" alt="Profile">
+          </div>
+          <span>Dr. Sneha Gupta</span>
+          <p class="job">Assistant Professor</p>
+          <p class="job" style="font-size: 10px">Department of Civil Engineering</p>
+          <p class="job" style="font-size: 10px">Madan Mohan Malaviya University of Technology, Gorakhpur</p>
+          <p class="job" style="font-size: 12px">sgce@mmmut.ac.in</p>
+          <p class="job" style="font-size: 12px">+91 9235552354</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="sub-title">Advisory Committee Members</h2>
+
+  <!-- Parent container for the cards -->
+  <div class="Acommittee-cards-container"></div>
+
+  <script>
+    const people = [
+      { name: 'Prof. Sanjay Kumar Shukla', title: 'Edith Cowan University', location: 'Australia' },
+      { name: 'Prof. M. Parida', title: 'IIT Roorkee', location: 'India' },
+      { name: 'Prof. C.S.P. Ojha', title: 'IT Roorkee', location: 'India' },
+      { name: 'Prof. K.K. Shukla', title: 'Director', location: 'MANIT Bhopal, India' },
+      { name: 'Prof. Nitin Tripathi', title: 'AIT, Bangkok', location: 'Thailand' },
+      { name: 'Prof. A.K. Sachan', title: 'MNNIT Prayagraj', location: 'India' },
+      { name: 'Prof. K.K. Pathak', title: 'IT BHU', location: 'India' },
+      { name: 'Prof. Sathish Kumar Palaniappan', title: 'KMUT, North Bangkok', location: 'Thailand' }
+    ];
+
+    function generateCards() {
+      const container = document.querySelector('.Acommittee-cards-container'); // Parent container for cards
+
+      people.forEach(person => {
+        const card = document.createElement('div');
+        card.classList.add('Acommittee-card');
+
+        card.innerHTML = `
+          <div class="Acommittee-card-border-top"></div>
+          <div class="Acommittee-card-text">
+            <span>${person.name}</span>
+            <p class="Acommittee-job">${person.title}</p>
+            <p class="Acommittee-location">${person.location}</p>
+          </div>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    generateCards();
+  </script>
+
+  <section class="committee-1">
+
+  <h2 class="sub-title">Organizing Committee</h2>
+  <!-- Parent container for the cards -->
+  <div class="Acommittee-cards-container-1"></div>
+
+  <script>
+    const people1 = [
+      { name: 'Prof. Govind Pandey', title: 'MMMUT' },
+      { name: 'Prof. ShriRam', title: 'MMMUT' },
+      { name: 'Prof. A.K. Mishra', title: 'MMMUT' },
+      { name: 'Dr. R.K. Shukla', title: 'MMMUT' },
+      { name: 'Shri R. D. Patel', title: 'MMMUT' },
+      { name: 'Dr. Vinay Kumar Singh', title: 'MMMUT' },
+      { name: 'Dr. Sneha Gupta', title: 'MMMUT' },
+      { name: 'Dr. Madan Chandra Maurya', title: 'MMMUT' },
+      { name: 'Dr. Vinay Bhushan Chauhan', title: 'MMMUT' },
+      { name: 'Dr. Rohit Kumar', title: 'MMMUT' },
+      { name: 'Dr. Pradeep Muley', title: 'MMMUT' }
+    ];
+
+    function generateCards() {
+      const container = document.querySelector('.Acommittee-cards-container-1'); // Parent container for cards
+
+      people1.forEach(person => {
+        const card = document.createElement('div');
+        card.classList.add('Acommittee-card');
+
+        card.innerHTML = `
+            <div class="Acommittee-card-border-top"></div>
+            <div class="Acommittee-card-text">
+              <span>${person.name}</span>
+              <p class="Acommittee-job">${person.title}</p>
+            </div>
+          `;
+
+        container.appendChild(card);
+      });
+    }
+
+    generateCards();
+  </script>
+  </section>
+
+  
+  <section class="committee-1">
+
+    <h2 class="sub-title">Organizing Committee</h2>
+    <!-- Parent container for the cards -->
+    <div class="Acommittee-cards-container-2"></div>
+  
+    <script>
+      const people2 = [
+        { name: 'Shivansh Shukla', title: 'B.Tech, Final Year', location: 'Civil Engineering Department' },
+      { name: 'Shrijal Gupta', title: 'B.Tech, Sophomore Year', location: 'Electronics And Communication Engineering Department' },
+      { name: 'Shiv Kant Dhakre', title: 'B.Tech, Sophomore Year', location: 'Computer Science And Engineering Department' }
+      ];
+  
+      function generateCards() {
+        const container = document.querySelector('.Acommittee-cards-container-2'); // Parent container for cards
+  
+        people2.forEach(person => {
+          const card = document.createElement('div');
+          card.classList.add('Acommittee-card');
+  
+          card.innerHTML = `
+              <div class="Acommittee-card-border-top"></div>
+              <div class="Acommittee-card-text">
+                <span>${person.name}</span>
+                <p class="Acommittee-job">${person.title}</p>
+                <p class="Acommittee-location">${person.location}</p>
+              </div>
+            `;
+  
+          container.appendChild(card);
+        });
+      }
+  
+      generateCards();
+    </script>
+    </section>
+
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section contact-us">
+        <h3>Contact Us</h3>
+        <p>Madan Mohan Malaviya University of Technology</p>
+        <p>Gorakhpur, Uttar Pradesh - 273010, India</p>
+        <p>Mob. No: +91 9235552358, +91 9235552354</p>
+        <p>Email: <a href="mailto:iims2025@mmmut.ac.in">iims2025@mmmut.ac.in</a></p>
+      </div>
+      <div class="footer-section quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="date.html">Important Dates</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

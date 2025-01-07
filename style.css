@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;
 }
 
 .header {
@@ -293,7 +292,7 @@ body {
 .about {
   width: 100%;
   margin: auto;
-  padding: 100px;
+  /* padding: 100px; */
   text-align: center;
 }
 
@@ -867,3 +866,524 @@ th {
 }
 
 
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(resources/bg-img.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.sub-header h1{
+  /* margin-top: 100px; */
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 200px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.contact-section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #8c52ff;
+}
+.contact-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.contact-card h3 {
+  margin: 0 0 5px 0;
+  color: #444;
+}
+.contact-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.contact-card:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: #dddddd;
+
+}
+.contact-card a {
+  color: #8c52ff;
+  text-decoration: none;
+}
+.contact-card a:hover {
+  text-decoration: underline;
+}
+.conference-email {
+  text-align: center;
+  margin-top: 30px;
+}
+.conference-email a {
+  color: #8c52ff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.conference-email a:hover {
+  text-decoration: underline;
+}
+
+/* .table-container {
+  width: 90%;
+  max-width: 90%;
+  overflow-x: auto;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #8c52ff;
+  background-color: #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  color: black;
+}
+
+td {
+  padding: 15px 20px;
+  text-align: left;
+  border: 1px solid #8c52ff;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ececff;
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+
+  td {
+    padding: 10px 15px;
+  }
+} */
+
+.abstract-info{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+/* .abstract-info h2{
+  text-align: left;
+} */
+
+.abstract-section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.abstract-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #8c52ff;
+  font-weight: 600;
+}
+
+.abstract-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.abstract-card {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.abstract-card:hover {
+  transform: scale(1.05);
+}
+
+.abstract-card h3 {
+  margin: 0 0 10px 0;
+  color: #8c52ff;
+  font-size: 18px;
+}
+
+.abstract-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+  text-decoration: underline;
+}
+
+.abstract-card a {
+  display: inline-block;
+  color: #8c52ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.abstract-card a:hover {
+  text-decoration: underline #8c52ff;
+}
+
+@media (max-width: 768px) {
+  .abstract-section {
+    padding: 30px 15px;
+  }
+
+  .abstract-card {
+    padding: 15px;
+  }
+
+  .abstract-card h3 {
+    font-size: 16px;
+  }
+
+  .abstract-card p,
+  .abstract-card a {
+    font-size: 14px;
+  }
+}
+
+.table-container {
+  width: 90%;
+  max-width: 90%;
+  overflow-x: auto;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #8c52ff;
+  background-color: #ffffff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  color: black;
+}
+th {
+  border: 1px solid #8c52ff;
+}
+
+td {
+  padding: 15px 20px;
+  text-align: left;
+  border: 1px solid #8c52ff;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ececff;
+}
+
+@media (max-width: 700px) {
+  table {
+    font-size: 14px;
+  }
+  .abstract-table {
+    font-size: 10px;
+  }
+  .abstract-table td{
+    padding: 6px 8px;
+
+  }
+
+  td {
+    padding: 10px 15px;
+    
+  }
+}
+
+.committee{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.parent-card {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.card {
+  width: 90%;
+  max-width: 225px;
+  height: 275px;
+  background: #8c52ff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-border-top {
+  width: 60%;
+  height: 5px;
+  background: #ffffff;
+  margin: auto;
+  border-radius: 0 0 15px 15px;
+}
+
+.card .img {
+  width: 80px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 20px auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card span {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+  display: block;
+  margin-top: 10px;
+}
+
+.card .job {
+  font-weight: normal;
+  padding: 0 1.5%;
+  color: #f0e6ff;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.card .job-small {
+  font-size: 10px;
+}
+
+.card button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #8c52ff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card button:hover {
+  background: #6b64f3;
+  color: #ffffff;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 10px;
+  }
+
+  .card span {
+    font-size: 16px;
+  }
+
+  .card .job {
+    font-size: 12px;
+  }
+
+  .card .job-small {
+    font-size: 10px;
+  }
+
+  .card button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+.committee-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;        
+
+}
+
+@media(max-width: 700px){
+  .committee-row{
+      flex-direction: column;
+  }
+}
+
+
+
+.Acommittee-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  /* max-width: 1200px; */
+}
+.Acommittee-cards-container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  /* max-width: 1200px; */
+}
+
+.Acommittee-cards-container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  /* max-width: 1200px; */
+}
+
+.Acommittee-card {
+  width: 100%;
+  max-width: 200px;
+  height: 120px;
+  background: #8c52ff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.Acommittee-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.Acommittee-card .Acommittee-card-border-top {
+  width: 60%;
+  height: 5px;
+  background: #ffffff;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.Acommittee-card span {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.Acommittee-card-text {
+  padding: 10px;
+}
+
+.Acommittee-card .Acommittee-job {
+  font-weight: normal;
+  color: #f0e6ff;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.Acommittee-card .Acommittee-location {
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Acommittee-cards-container {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .Acommittee-card {
+    max-width: 180px;
+  }
+
+  .Acommittee-card span {
+    font-size: 16px;
+  }
+
+  .Acommittee-card .Acommittee-job, 
+  .Acommittee-card .Acommittee-location {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Acommittee-cards-container {
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .Acommittee-card {
+    max-width: 150px;
+  }
+
+  .Acommittee-card span {
+    font-size: 14px;
+  }
+
+  .Acommittee-card .Acommittee-job, 
+  .Acommittee-card .Acommittee-location {
+    font-size: 10px;
+  }
+}
+
+.committee-1{
+  margin-top: 20px;
+}
