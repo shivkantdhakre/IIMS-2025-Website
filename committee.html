@@ -109,7 +109,7 @@
 
   <script>
     const people = [
-      { name: 'Prof. Sanjay Kumar Shukla', title: 'Edith Cowan University', location: 'Australia' },
+      { name: 'Prof. Sanjay Kumar Shukla', title: 'Edith Cowan University', location: 'Australia' , link:'https://www.mmmut.ac.in/News_content/IMGFaculty246.jpg'},
       { name: 'Prof. M. Parida', title: 'IIT Roorkee', location: 'India' },
       { name: 'Prof. C.S.P. Ojha', title: 'IT Roorkee', location: 'India' },
       { name: 'Prof. K.K. Shukla', title: 'Director', location: 'MANIT Bhopal, India' },
@@ -124,14 +124,17 @@
 
       people.forEach(person => {
         const card = document.createElement('div');
-        card.classList.add('Acommittee-card');
+        card.classList.add('card');
 
         card.innerHTML = `
-          <div class="Acommittee-card-border-top"></div>
-          <div class="Acommittee-card-text">
+          <div class="card-border-top"></div>
+          <div class="img">
+            <img src="${person.link}" alt="Profile">
+          </div>
+          <div class="card-text">
             <span>${person.name}</span>
-            <p class="Acommittee-job">${person.title}</p>
-            <p class="Acommittee-location">${person.location}</p>
+            <p class="job">${person.title}</p>
+            <p class="location">${person.location}</p>
           </div>
         `;
 
