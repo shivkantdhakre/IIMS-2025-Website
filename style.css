@@ -1343,6 +1343,12 @@ tr:hover {
   font-size: 14px;
 }
 
+.Acommittee-card .Acommittee-location {
+  font-weight: normal;
+  color: #ffffff;
+  font-size: 14px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .Acommittee-cards-container {

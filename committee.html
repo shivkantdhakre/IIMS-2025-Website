@@ -26,7 +26,7 @@
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="committee"><strong>Conference Committee</strong></a></li>
+          <li><a href="committee.html"><strong>Conference Committee</strong></a></li>
           <li><a href="registration.html">Registration</a></li>
           <li><a href="date.html">Important Dates</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -53,7 +53,7 @@
         <p class="job job-small">Madan Mohan Malaviya University of Technology, Gorakhpur</p>
       </div>
     </div>
-    <h2 class="sub-title">Patron</h2>
+    <h2 class="sub-title">Chairman</h2>
     <div class="parent-card">
       <div class="card">
         <div class="card-border-top"></div>
@@ -108,21 +108,22 @@
   <div class="Acommittee-cards-container"></div>
 
   <script>
-    const people = [
-      { name: 'Prof. Sanjay Kumar Shukla', title: 'Edith Cowan University', location: 'Australia' , link:'https://www.mmmut.ac.in/News_content/IMGFaculty246.jpg'},
-      { name: 'Prof. M. Parida', title: 'IIT Roorkee', location: 'India' },
-      { name: 'Prof. C.S.P. Ojha', title: 'IIT Roorkee', location: 'India' },
-      { name: 'Prof. K.K. Shukla', title: 'Director', location: 'MANIT Bhopal, India' },
-      { name: 'Prof. Nitin Tripathi', title: 'AIT, Bangkok', location: 'Thailand' },
-      { name: 'Prof. A.K. Sachan', title: 'MNNIT Prayagraj', location: 'India' },
-      { name: 'Prof. K.K. Pathak', title: 'IIT BHU', location: 'India' },
-      { name: 'Prof. Sathish Kumar Palaniappan', title: 'KMUT, North Bangkok', location: 'Thailand' },
-      { name: 'Prof. Bhola N.S. Ghimire', title: 'Institute of Engineering, Tribhuvan University', location: 'Kathmandu, Nepal' },
-      { name: 'Prof. S.L. Dhingra', title: 'IIT Bombay', location: 'India' },
-    
+    document.addEventListener('DOMContentLoaded', function() {
+      const people = [
+      { name: 'Prof. Sanjay Kumar Shukla', title: 'Edith Cowan University', location: 'Australia', link: 'https://www.ecu.edu.au/__data/assets/image/0013/1021522/SHUKLA-Sanjay_Photo_February-2023.jpg' },
+      { name: 'Prof. M. Parida', title: 'IIT Roorkee', location: 'India', link: 'https://crridom.gov.in/sites/default/files/images/prof-parida-director-crri.jpg' },
+      { name: 'Prof. C.S.P. Ojha', title: 'IIT Roorkee', location: 'India', link: 'https://civil.iitr.ac.in/IMG/4-CSOjha.jpg' },
+      { name: 'Prof. K.K. Shukla', title: 'Director', location: 'MANIT Bhopal, India', link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB5aSfAwG-NZn6BU19qhRZMuHiux8TpHpp2GV5ZSI25QrjndRGtRD8XTDFL2lNUPEiHho&usqp=CAU' },
+      { name: 'Prof. Nitin Tripathi', title: 'AIT, Bangkok', location: 'Thailand', link: 'https://ait.ac.th/wp-content/uploads/2021/12/DSC03087-scaled-e1718705527468.jpg' },
+      { name: 'Prof. A.K. Sachan', title: 'MNNIT Prayagraj', location: 'India', link: 'https://mnnit.ac.in/userprofile/uploads/26058-sachanphoto.jpg' },
+      { name: 'Prof. K.K. Pathak', title: 'IIT BHU', location: 'India', link: 'https://prev.iitbhu.ac.in/sites/default/files/styles/iitbhu_profile/public/user_pictures/picture-97-1509620043.png?itok=oaGkJiab' },
+      { name: 'Prof. Sathish Kumar Palaniappan', title: 'KMUT, North Bangkok', location: 'Thailand', link: 'https://scholar.googleusercontent.com/citations?view_op=view_photo&user=vmDZpO8AAAAJ&citpid=20' },
+      { name: 'Prof. Bhola N.S. Ghimire', title: 'Institute of Engineering, Tribhuvan University', location: 'Kathmandu, Nepal', link: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=JGH-cZAAAAAJ&citpid=4' },
+      { name: 'Prof. S.L. Dhingra', title: 'IIT Bombay', location: 'India', link: 'https://www.civil.iitb.ac.in/~dhingra/local/user/gimage/dhingra_450_338.jpg' },
+
     ];
 
-    function generateCards() {
+    function generateAdvisoryCommitteeCards() {
       const container = document.querySelector('.Acommittee-cards-container'); // Parent container for cards
 
       people.forEach(person => {
@@ -145,90 +146,101 @@
       });
     }
 
-    generateCards();
+      generateAdvisoryCommitteeCards();
+    });
   </script>
 
   <section class="committee-1">
 
-  <h2 class="sub-title">Organizing Committee</h2>
-  <!-- Parent container for the cards -->
-  <div class="Acommittee-cards-container-1"></div>
+    <h2 class="sub-title">Organizing Committee</h2>
+    <div class="Acommittee-cards-container-1"></div>
 
   <script>
-    const people1 = [
-      { name: 'Prof. Govind Pandey', title: 'MMMUT' },
-      { name: 'Prof. ShriRam', title: 'MMMUT' },
-      { name: 'Prof. A.K. Mishra', title: 'MMMUT' },
-      { name: 'Dr. R.K. Shukla', title: 'MMMUT' },
-      { name: 'Shri R. D. Patel', title: 'MMMUT' },
-      { name: 'Dr. Vinay Kumar Singh', title: 'MMMUT' },
-      { name: 'Dr. Sneha Gupta', title: 'MMMUT' },
-      { name: 'Dr. Madan Chandra Maurya', title: 'MMMUT' },
-      { name: 'Dr. Vinay Bhushan Chauhan', title: 'MMMUT' },
-      { name: 'Dr. Rohit Kumar', title: 'MMMUT' },
-      { name: 'Dr. Pradeep Muley', title: 'MMMUT' }
-    ];
+    document.addEventListener('DOMContentLoaded', function() {
+      const people1 = [
+        { name: 'Prof. Govind Pandey', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty79.jpg' },
+        { name: 'Prof. ShriRam', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty67.JPG?637533086151612222' },
+        { name: 'Prof. A.K. Mishra', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty29.jpg?637507973256744939' },
+        { name: 'Dr. R.K. Shukla', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty410.JPG' },
+        { name: 'Shri R. D. Patel', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty73.jpg' },
+        { name: 'Dr. Vinay Kumar Singh', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty153.jpg?63750505620939957' },
+        { name: 'Dr. Sneha Gupta', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty246.jpg' },
+        { name: 'Dr. Madan Chandra Maurya', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty268.jpg?63750368675332120' },
+        { name: 'Dr. Vinay Bhushan Chauhan', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty275.jpg' },
+        { name: 'Dr. Rohit Kumar', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty280.jpg?63786875698220601' },
+        { name: 'Dr. Pradeep Muley', title: 'MMMUT', link: 'https://mmmut.ac.in/News_content/IMGFaculty285.jpg?63752959284513953' }
+      ];
 
-    function generateCards() {
+    function generateAdvisoryCommitteeCards() {
       const container = document.querySelector('.Acommittee-cards-container-1'); // Parent container for cards
 
       people1.forEach(person => {
         const card = document.createElement('div');
-        card.classList.add('Acommittee-card');
+        card.classList.add('card');
 
         card.innerHTML = `
-            <div class="Acommittee-card-border-top"></div>
-            <div class="Acommittee-card-text">
-              <span>${person.name}</span>
-              <p class="Acommittee-job">${person.title}</p>
+          <div class="card-border-top"></div>
+            <div class="img">
+              <img src="${person.link}" alt="Profile">
             </div>
-          `;
+            <div class="card-text">
+              <span>${person.name}</span>
+              <p class="job">${person.title}</p>
+          </div>
+        `;
 
         container.appendChild(card);
       });
     }
 
-    generateCards();
+      generateAdvisoryCommitteeCards();
+    });
   </script>
   </section>
 
-  
+
   <section class="committee-1">
 
     <h2 class="sub-title">Student Coordinators</h2>
     <!-- Parent container for the cards -->
     <div class="Acommittee-cards-container-2"></div>
-  
+
     <script>
-      const people2 = [
-        { name: 'Shivansh Shukla', title: 'B.Tech, Final Year', location: 'Civil Engineering Department' },
-      { name: 'Shrijal Gupta', title: 'B.Tech, Sophomore Year', location: 'Electronics And Communication Engineering Department' },
-      { name: 'Shiv Kant Dhakre', title: 'B.Tech, Sophomore Year', location: 'Computer Science And Engineering Department' }
+      document.addEventListener('DOMContentLoaded', function() {
+        const people2 = [
+        { name: 'Shivansh Shukla', title: 'B.Tech, Final Year', location: 'Civil Engineering Department',link:'/resources/student_coordinators/Shivansh_Shukla.png', contact:'+91 7054471799' },
+        { name: 'Shrijal Gupta', title: 'B.Tech, Sophomore Year', location: 'Electronics And Communication Engineering Department',link:'/resources/student_coordinators/Shrijal_Gupta.jpg', contact:'+91 8840384771' },
+        { name: 'Shiv Kant Dhakre', title: 'B.Tech, Sophomore Year', location: 'Computer Science And Engineering Department',link:'/resources/student_coordinators/Shiv_Kant_Dhakre.jpg', contact:'+91 6396107509' }
       ];
-  
+
       function generateCards() {
         const container = document.querySelector('.Acommittee-cards-container-2'); // Parent container for cards
-  
+
         people2.forEach(person => {
           const card = document.createElement('div');
-          card.classList.add('Acommittee-card');
-  
+          card.classList.add('card');
+
           card.innerHTML = `
-              <div class="Acommittee-card-border-top"></div>
-              <div class="Acommittee-card-text">
+              <div class="card-border-top"></div>
+              <div class="img">
+                <img src="${person.link}" alt="Profile">
+              </div>
+              <div class="card-text">
                 <span>${person.name}</span>
-                <p class="Acommittee-job">${person.title}</p>
-                <p class="Acommittee-location">${person.location}</p>
+                <p class="job">${person.title}</p>
+                <p class="location">${person.location}</p>
+                <p class="job">${person.contact}</p>
               </div>
             `;
-  
+
           container.appendChild(card);
         });
       }
-  
+
       generateCards();
+    });
     </script>
-    </section>
+  </section>
 
 
 
