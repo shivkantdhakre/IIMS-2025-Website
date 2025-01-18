@@ -27,6 +27,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="committee.html"><strong>Conference Committee</strong></a></li>
+          <li><a href="publication.html">Conference Publications</a></li>
           <li><a href="registration.html">Registration</a></li>
           <li><a href="date.html">Important Dates</a></li>
           <li><a href="contact.html">Contact Us</a></li>
@@ -108,29 +109,30 @@
   <div class="Acommittee-cards-container"></div>
 
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const people = [
-      { name: 'Prof. Sanjay Kumar Shukla', title: 'Edith Cowan University', location: 'Australia', link: 'https://www.ecu.edu.au/__data/assets/image/0013/1021522/SHUKLA-Sanjay_Photo_February-2023.jpg' },
-      { name: 'Prof. M. Parida', title: 'IIT Roorkee', location: 'India', link: 'https://crridom.gov.in/sites/default/files/images/prof-parida-director-crri.jpg' },
-      { name: 'Prof. C.S.P. Ojha', title: 'IIT Roorkee', location: 'India', link: 'https://civil.iitr.ac.in/IMG/4-CSOjha.jpg' },
-      { name: 'Prof. K.K. Shukla', title: 'Director', location: 'MANIT Bhopal, India', link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB5aSfAwG-NZn6BU19qhRZMuHiux8TpHpp2GV5ZSI25QrjndRGtRD8XTDFL2lNUPEiHho&usqp=CAU' },
-      { name: 'Prof. Nitin Tripathi', title: 'AIT, Bangkok', location: 'Thailand', link: 'https://ait.ac.th/wp-content/uploads/2021/12/DSC03087-scaled-e1718705527468.jpg' },
-      { name: 'Prof. A.K. Sachan', title: 'MNNIT Prayagraj', location: 'India', link: 'https://mnnit.ac.in/userprofile/uploads/26058-sachanphoto.jpg' },
-      { name: 'Prof. K.K. Pathak', title: 'IIT BHU', location: 'India', link: 'https://prev.iitbhu.ac.in/sites/default/files/styles/iitbhu_profile/public/user_pictures/picture-97-1509620043.png?itok=oaGkJiab' },
-      { name: 'Prof. Sathish Kumar Palaniappan', title: 'KMUT, North Bangkok', location: 'Thailand', link: 'https://scholar.googleusercontent.com/citations?view_op=view_photo&user=vmDZpO8AAAAJ&citpid=20' },
-      { name: 'Prof. Bhola N.S. Ghimire', title: 'Institute of Engineering, Tribhuvan University', location: 'Kathmandu, Nepal', link: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=JGH-cZAAAAAJ&citpid=4' },
-      { name: 'Prof. S.L. Dhingra', title: 'IIT Bombay', location: 'India', link: 'https://www.civil.iitb.ac.in/~dhingra/local/user/gimage/dhingra_450_338.jpg' },
+        { name: 'Prof. Sanjay Kumar Shukla', title: 'Edith Cowan University', location: 'Australia', link: 'https://www.ecu.edu.au/__data/assets/image/0013/1021522/SHUKLA-Sanjay_Photo_February-2023.jpg' },
+        { name: 'Prof. M. Parida', title: 'IIT Roorkee', location: 'India', link: 'https://crridom.gov.in/sites/default/files/images/prof-parida-director-crri.jpg' },
+        { name: 'Prof. C.S.P. Ojha', title: 'IIT Roorkee', location: 'India', link: 'https://civil.iitr.ac.in/IMG/4-CSOjha.jpg' },
+        { name: 'Prof. K.K. Shukla', title: 'Director', location: 'MANIT Bhopal, India', link: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB5aSfAwG-NZn6BU19qhRZMuHiux8TpHpp2GV5ZSI25QrjndRGtRD8XTDFL2lNUPEiHho&usqp=CAU' },
+        { name: 'Prof. Nitin Tripathi', title: 'AIT, Bangkok', location: 'Thailand', link: 'https://ait.ac.th/wp-content/uploads/2021/12/DSC03087-scaled-e1718705527468.jpg' },
+        { name: 'Prof. A.K. Sachan', title: 'MNNIT Prayagraj', location: 'India', link: 'https://mnnit.ac.in/userprofile/uploads/26058-sachanphoto.jpg' },
+        { name: 'Prof. K.K. Pathak', title: 'IIT BHU', location: 'India', link: 'https://prev.iitbhu.ac.in/sites/default/files/styles/iitbhu_profile/public/user_pictures/picture-97-1509620043.png?itok=oaGkJiab' },
+        { name: 'Prof. Sathish Kumar Palaniappan', title: 'KMUT, North Bangkok', location: 'Thailand', link: 'https://scholar.googleusercontent.com/citations?view_op=view_photo&user=vmDZpO8AAAAJ&citpid=20' },
+        { name: 'Prof. Bhola N.S. Ghimire', title: 'Institute of Engineering, Tribhuvan University', location: 'Kathmandu, Nepal', link: 'https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=JGH-cZAAAAAJ&citpid=4' },
+        { name: 'Ex. Prof. S.L. Dhingra', title: 'IIT Bombay', location: 'India', link: 'https://www.civil.iitb.ac.in/~dhingra/local/user/gimage/dhingra_450_338.jpg' },
+        { name: 'Prof. Dharamveer Singh', title: 'IIT Bombay', location: 'India', link: 'https://www.civil.iitb.ac.in//resources/images/people_image/33/dce7a8d75ca154bd33e16ae210ee9736.jpeg' },
 
-    ];
+      ];
 
-    function generateAdvisoryCommitteeCards() {
-      const container = document.querySelector('.Acommittee-cards-container'); // Parent container for cards
+      function generateAdvisoryCommitteeCards() {
+        const container = document.querySelector('.Acommittee-cards-container'); // Parent container for cards
 
-      people.forEach(person => {
-        const card = document.createElement('div');
-        card.classList.add('card');
+        people.forEach(person => {
+          const card = document.createElement('div');
+          card.classList.add('card');
 
-        card.innerHTML = `
+          card.innerHTML = `
           <div class="card-border-top"></div>
           <div class="img">
             <img src="${person.link}" alt="Profile">
@@ -142,9 +144,9 @@
           </div>
         `;
 
-        container.appendChild(card);
-      });
-    }
+          container.appendChild(card);
+        });
+      }
 
       generateAdvisoryCommitteeCards();
     });
@@ -153,7 +155,7 @@
   <section class="committee-1">
 
     <h2 class="sub-title">Organizing Committee</h2>
-    <div class="Acommittee-cards-container-1"></div>
+    <!-- <div class="Acommittee-cards-container-1"></div>
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -195,7 +197,174 @@
 
       generateAdvisoryCommitteeCards();
     });
-  </script>
+  </script> -->
+    <div class="container-updated">
+      <!-- First Committee -->
+      <div class="committee-updated">
+        <div class="committee-title-updated">Technical and Publication Committee</div>
+        <br>
+        <div class="card-container-updated">
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty29.jpg?637507973256744939" alt="Member">
+            <h3>Prof. A. K. Mishra</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty153.jpg?63750505620939957" alt="Member">
+            <h3>Dr. Vinay Kumar Singh</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty246.jpg" alt="Member">
+            <h3>Dr. Sneha Gupta</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty285.jpg?63752959284513953" alt="Member">
+            <h3>Dr. Pradeep Muley</h3>
+            <p>MMMUT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Second Committee -->
+      <div class="committee-updated">
+        <div class="committee-title-updated">Academic and Industrial Collaboration Committee</div>
+        <div class="card-container-updated">
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty79.jpg" alt="Member">
+            <h3>Prof. Govind Pandey</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty67.JPG?637533086151612222" alt="Member">
+            <h3>Prof. Shri Ram</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty280.jpg?63786875698220601" alt="Member">
+            <h3>Dr. Rohit Kumar</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty275.jpg" alt="Member">
+            <h3>Dr. Vinay Bhushan Chauhan</h3>
+            <p>MMMUT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Third Committee -->
+      <div class="committee-updated">
+        <div class="committee-title-updated">Sponsorship Committee</div>
+        <br>
+        <div class="card-container-updated">
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty67.JPG?637533086151612222" alt="Member">
+            <h3>Prof. Shri Ram</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty73.jpg" alt="Member">
+            <h3>Shri R. D. Patel</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty410.JPG" alt="Member">
+            <h3>Dr. R. K. Shukla</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty275.jpg" alt="Member">
+            <h3>Dr. Vinay Bhushan Chauhan</h3>
+            <p>MMMUT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fourth Committee -->
+      <div class="committee-updated">
+        <div class="committee-title-updated">Publicity and Invitation Committee</div>
+        <br>
+        <div class="card-container-updated">
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty79.jpg" alt="Member">
+            <h3>Prof. Govind Pandey</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty73.jpg" alt="Member">
+            <h3>Shri R. D. Patel</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty410.JPG" alt="Member">
+            <h3>Dr. R. K. Shukla</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty280.jpg?63786875698220601" alt="Member">
+            <h3>Dr. Rohit Kumar</h3>
+            <p>MMMUT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fifth Committee -->
+      <div class="committee-updated">
+        <div class="committee-title-updated">Accommodation and Hospitality Committee</div>
+        <div class="card-container-updated">
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty29.jpg?637507973256744939" alt="Member">
+            <h3>Prof. A. K. Mishra</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty285.jpg?63752959284513953" alt="Member">
+            <h3>Dr. Pradeep Muley</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty275.jpg" alt="Member">
+            <h3>Dr. Vinay Bhushan Chauhan</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty268.jpg?63750368675332120" alt="Member">
+            <h3>Dr. Madan Chandra Maurya</h3>
+            <p>MMMUT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sixth Committee -->
+      <div class="committee-updated">
+        <div class="committee-title-updated">Registration Committee</div>
+        <br>
+        <div class="card-container-updated">
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty29.jpg?637507973256744939" alt="Member">
+            <h3>Prof. A. K. Mishra</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty153.jpg?63750505620939957" alt="Member">
+            <h3>Dr. Vinay Kumar Singh</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty246.jpg" alt="Member">
+            <h3>Dr. Sneha Gupta</h3>
+            <p>MMMUT</p>
+          </div>
+          <div class="card-updated">
+            <img src="https://mmmut.ac.in/News_content/IMGFaculty268.jpg?63750368675332120" alt="Member">
+            <h3>Dr. Madan Chandra Maurya</h3>
+            <p>MMMUT</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 
@@ -206,21 +375,21 @@
     <div class="Acommittee-cards-container-2"></div>
 
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function () {
         const people2 = [
-        { name: 'Shivansh Shukla', title: 'B.Tech, Final Year', location: 'Civil Engineering Department',link:'/resources/Shivansh_Shukla.png', contact:'+91 7054471799' },
-        { name: 'Shrijal Gupta', title: 'B.Tech, Sophomore Year', location: 'Electronics And Communication Engineering Department',link:'/resources/Shrijal_Gupta.jpg', contact:'+91 8840384771' },
-        { name: 'Shiv Kant Dhakre', title: 'B.Tech, Sophomore Year', location: 'Computer Science And Engineering Department',link:'/resources/Shiv_Kant_Dhakre.jpg', contact:'+91 6396107509' }
-      ];
+          { name: 'Shivansh Shukla', title: 'B.Tech, Final Year', location: 'Civil Engineering Department', link: '/resources/Shivansh_Shukla.png', contact: '+91 7054471799' },
+          { name: 'Shrijal Gupta', title: 'B.Tech, Sophomore Year', location: 'Electronics And Communication Engineering Department', link: '/resources/Shrijal_Gupta.jpg', contact: '+91 8840384771' },
+          { name: 'Shiv Kant Dhakre', title: 'B.Tech, Sophomore Year', location: 'Computer Science And Engineering Department', link: '/resources/Shiv_Kant_Dhakre.jpg', contact: '+91 6396107509' }
+        ];
 
-      function generateCards() {
-        const container = document.querySelector('.Acommittee-cards-container-2'); // Parent container for cards
+        function generateCards() {
+          const container = document.querySelector('.Acommittee-cards-container-2'); // Parent container for cards
 
-        people2.forEach(person => {
-          const card = document.createElement('div');
-          card.classList.add('card');
+          people2.forEach(person => {
+            const card = document.createElement('div');
+            card.classList.add('card');
 
-          card.innerHTML = `
+            card.innerHTML = `
               <div class="card-border-top"></div>
               <div class="img">
                 <img src="${person.link}" alt="Profile">
@@ -233,12 +402,12 @@
               </div>
             `;
 
-          container.appendChild(card);
-        });
-      }
+            container.appendChild(card);
+          });
+        }
 
-      generateCards();
-    });
+        generateCards();
+      });
     </script>
   </section>
 
