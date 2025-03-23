@@ -59,4 +59,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+function closeMessage() {
+  document.getElementById("messageBox").style.display = "none";
+}
+
 
