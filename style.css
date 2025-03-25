@@ -1502,7 +1502,7 @@ tr:hover {
 
 .message_container {
   position: fixed;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -1541,8 +1541,16 @@ tr:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.message p {
+/* .message p {
   color: #333;
+  padding: 1em;
+  margin: 0;
+  display: block;
+  line-height: 1.4em;
+  text-align: center;
+} */
+
+.message{
   padding: 1em;
   margin: 0;
   display: block;
@@ -1624,3 +1632,36 @@ tr:hover {
 }
 
 
+.announcement-list {
+  color: red;
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 10px;
+  list-style-type: disc; /* Ensure bullets appear */
+}
+
+.announcement-list li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+.button-container {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.submit-btn {
+  text-decoration: none;
+  background-color: #8c52ff;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #6a3bbf;
+}
