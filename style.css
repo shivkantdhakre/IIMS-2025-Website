@@ -1502,7 +1502,7 @@ tr:hover {
 
 .message_container {
   position: fixed;
-  top: 25%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -1606,7 +1606,7 @@ tr:hover {
 
 @media (max-width: 480px) {
   .message_container {
-    top: 30%;
+    top: 35%;
     width: 90%;
   }
 
